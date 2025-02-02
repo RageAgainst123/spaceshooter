@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retro Space Shooter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Load entities first -->
+    <script src="js/entities/Enemy.js"></script>
+    <script src="js/entities/Player.js"></script>
+    <script src="js/entities/Powerup.js"></script>
+    
+    <!-- Then load scenes -->
+    <script src="js/AudioManager.js"></script>
+    <script src="js/scenes/BootScene.js"></script>
+    <script src="js/scenes/MainMenuScene.js"></script>
+    <script src="js/scenes/GameScene.js"></script>
+    <script src="js/scenes/HUDScene.js"></script>
+    
+    <!-- Load main game file last -->
+    <script src="js/game.js"></script>
+</body>
+</html> 
